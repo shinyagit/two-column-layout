@@ -39,5 +39,10 @@
     = partial 'partials/footer'
 
     -# if it IE 9
-    %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"}
+    -# %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"}
     -# else if
+
+    -# import jquery
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
+    -# import javascript files
+    = javascript_include_tag 'site'
