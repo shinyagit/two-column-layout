@@ -23,11 +23,21 @@
     -# import css files
     = stylesheet_link_tag 'reset'
     = stylesheet_link_tag 'base'
+    = stylesheet_link_tag 'partials'
     = stylesheet_link_tag 'site'
     -# import javascript files
     = javascript_include_tag 'site'
     -# favicon の一括生成はこちらから https://ao-system.net/favicon/
     -# html to haml http://htmltohaml.com/
   %body
-    %p これはカスタムレイアウトです
-    = yield
+    = partial 'partials/header'
+    #two-column-wrapper
+      #main
+        = yield
+      #sidebar
+        = partial 'partials/sidebar'
+    = partial 'partials/footer'
+
+    -# if it IE 9
+    %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"}
+    -# else if

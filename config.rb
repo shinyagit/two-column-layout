@@ -16,7 +16,7 @@ page '/*.txt', layout: false
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 # 別レイアウトを一括指定
-page '/custom_layout/*', layout: 'custom_layout'
+page '/contents/*', layout: 'contents_layout'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
