@@ -1,0 +1,1 @@
+$(document).ready(function(){var o,s=!1;$("#drw-btn, #drw-layer").click(function(){0==s?(o=$(window).scrollTop(),$("body").addClass("fixed").css({top:-o}),$("#drw-btn").addClass("open"),s=!0):($("body").removeClass("fixed").css({top:0}),window.scrollTo(0,o),$("#drw-btn").removeClass("open"),s=!1),$("#nav-menu").toggleClass("slide-in"),$("#drw-layer").toggleClass("cover")})});
