@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#two-column-wrapper {
+  display: flex;
+
+}
+
+// ============= main config
+#main {
+  flex: 1;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+#main div {
+  margin-bottom: 10px;
+}
+
+#main .content1 {
+  height: 500px;
+  background-color: #fff;
+}
+
+#main .content-2column {
+  display: flex;
+
+  .inner-content {
+    flex: 1;
+    height: 300px;
+    margin: 0 5px;
+    background-color: #fff;
+
+    &:first-of-type {margin-left: 0;}
+    &:last-of-type {margin-right: 0;}
+  }
+}
+
+#main .content-3column {
+  display: flex;
+
+  .inner-content {
+    flex: 1;
+    height: 300px;
+    margin: 0 5px;
+    background-color: #fff;
+
+    &:first-of-type {margin-left: 0;}
+    &:last-of-type {margin-right: 0;}
+  }
+}
+
+// ================= sidebar config ==================
+
+#sidebar {
+  width: 300px;
+  padding: 10px;
+  background-color: #bbb;
+}
+
+#sidebar div {
+  margin-bottom: 10px;
+}
+
+#sidebar .box1 {
+  height: 200px;
+  background-color: #fff;
+}
+
+#sidebar .box2 {
+  height: 300px;
+  background-color: #fff;
+}
+
+#sidebar .box3 {
+  height: 400px;
+  background-color: #fff;
+}
+
+// ================ main and sidebar config for responsive
+@media screen and (max-width:900px) {
+  #two-column-wrapper {
+    display: block;
+  }
+
+  #sidebar {
+    width: 100%;
+    display: flex;
+
+    div {
+      flex: 1;
+      margin: 0 5px 10px;
+
+      &:first-of-type {margin-left: 0;}
+      &:last-of-type {margin-right: 0;}
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// ======== header config
+#header {
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+}
+
+// ======= main visual config
+#main-visual {
+  height: 500px;
+}
+
+// =======  footer config
+#footer {
+  padding: 10px;
+  background-color: #333;
+
+  #copyright {
+    text-align: center;
+    color: #fff;
+  }
+}
